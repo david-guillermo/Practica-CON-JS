@@ -2,7 +2,7 @@ const option = +prompt("Selecionas uno: \n1. The last of us \n2. Red dead redemp
 
 const newLocal = option === "4";
 if(option === "1"){
-    alert("JUegazo (❤´艸｀❤)");
+    alert("JUegazo (❤´艸｀❤)")
 }else if(option === "2"){
     alert("A perro si le sabes a gaming ☜(ﾟヮﾟ☜)")
 }else if(option === "3"){
