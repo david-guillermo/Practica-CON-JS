@@ -1,19 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./codigos/Practica.css">
-    <title>Calculadora de edad</title>
+    <script src="https://cdn.tailwindcss.com""></script>
+    <title>Cajero</title>
 </head>
-
 <body>
-    <h1>Calculadora de edad</h1>
-    <input type="date" id="fechaNacimiento" placeholder="Ingrese su fecha de nacimiento">
-    <button onclick="calcularEdad()">Calcular edad</button>
-    <p id="resultado"></p>
+    <main class="w-screen h-screen grid grid-cols-3 bg-[url('./imagenes/material')]">
+        <!-- Pantalla y teclado -->
+        <section class="flex flex-col items-center  col-span-2 h-[100%]">
+            <!-- Pantalla -->
+            <div class="w-[70%] h-[60%] bg-white mt-6">
 
-    <script src=></script>
-</body> 
+            </div>
+            
+            <!-- Salida Dinero / Teclado / Comprobante -->
+            <div class="flex gap-4">
+                <!-- Salida Dinero -->
+                <div></div>
+                
+                <!-- Teclado -->
+                <div></div>
+                
+                <!-- Comprobante -->
+                <div></div>
 
+            </div>
+        </section class="cal-span-1 h-[100%] bg-black/50">
+
+        <!-- Ranura Tarjeta / Pago SC -->
+        <section>
+            <!-- Ranura Tarjeta -->
+            <div></div>
+
+            <!-- Pago SC -->
+            <div></div>
+        </section>
+    </main>
+</body>
 </html>
