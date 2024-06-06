@@ -34,9 +34,6 @@ por ejemplo vw ,vh ,% */
 }
 
 
-
-
-
 .keypad {
     display: flex;
     flex-direction: column;
@@ -47,10 +44,6 @@ por ejemplo vw ,vh ,% */
     justify-content: space-between;
     margin-bottom: 10px;
 }
-
-
-
-
 
 
 
@@ -71,19 +64,10 @@ por ejemplo vw ,vh ,% */
 .btn:hover {
     background-color: #777;
 }
-
-
-
-
-
-
-
-
-
-
-
 /* Teclas (animacion,colores etc)
 ENTER CANCEL ENTER */
+
+
 .btn.special-clear {
     background-color: #f31212;
 }
@@ -97,11 +81,11 @@ ENTER CANCEL ENTER */
 /* __________________________ */
 
 .btn.special-clear:hover {
-    background-color: #d4151577;
+    background-color: #940a0aab;
 }
 .btn.special-cancel:hover {
-    background-color: #f3d112a8;
+    background-color: #9c8816a8;
 }
 .btn.special-enter:hover {
-    background-color: #37f31298; 
+    background-color: #25940f98; 
 }
