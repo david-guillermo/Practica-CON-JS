@@ -8,6 +8,9 @@ body {
     background-color: #f0f0f0;
 }
 
+
+
+
 .atm {
     width: 300px;
     background-color: #333;
@@ -20,7 +23,7 @@ por ejemplo vw ,vh ,% */
 
 
 
-
+/* pantalla */
 .screen {
     background-color: #fff;
     border-radius: 5px;
