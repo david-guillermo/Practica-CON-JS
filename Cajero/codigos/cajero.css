@@ -15,6 +15,11 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+/* usar unidades realivas y flexibles
+por ejemplo vw ,vh ,% */
+
+
+
 
 .screen {
     background-color: #fff;
@@ -24,6 +29,10 @@ body {
     text-align: center;
     font-size: 1.2em;
 }
+
+
+
+
 
 .keypad {
     display: flex;
@@ -36,6 +45,13 @@ body {
     margin-bottom: 10px;
 }
 
+
+
+
+
+
+
+/* colores de los nuemeros */
 .btn {
     width: 60px;
     height: 60px;
@@ -48,14 +64,41 @@ body {
     transition: background-color 0.3s;
 }
 
+/* color de la animacion de los nros */
 .btn:hover {
     background-color: #777;
 }
 
-.btn.special {
-    background-color: #f39c12;
+
+
+
+
+
+
+
+
+
+
+/* Teclas (animacion,colores etc)
+ENTER CANCEL ENTER */
+.btn.special-clear {
+    background-color: #f31212;
+}
+.btn.special-cancel {
+    background-color: #f3d112;
+}
+.btn.special-enter {
+    background-color: #37f312;
 }
 
-.btn.special:hover {
-    background-color: #e67e22;
+/* __________________________ */
+
+.btn.special-clear:hover {
+    background-color: #d4151577;
+}
+.btn.special-cancel:hover {
+    background-color: #f3d112a8;
+}
+.btn.special-enter:hover {
+    background-color: #37f31298; 
 }
