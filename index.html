@@ -9,40 +9,46 @@
     <title>Cajero Automático</title>
 </head>
 
-<body class="bg-#d4d4d8">
-    <div class="atm">
-        <div class="screen">
-            <p id="message">Bienvenido</p>
+<body>
+
+<div>
+    <nav class="barradebotones" >
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+    </nav>
+</div>
+
+<div class="atm">
+    <div class="screen">
+        <p id="message">Bienvenido</p>
+    </div>
+    <div class="keypad">
+        <div class="row">
+            <button class="btn" onclick="pressKey(1)">1</button>
+            <button class="btn" onclick="pressKey(2)">2</button>
+            <button class="btn" onclick="pressKey(3)">3</button>
         </div>
-        <div class="keypad">
-            <div class="row">
-                <button class="btn" onclick="pressKey(1)">1</button>
-                <button class="btn" onclick="pressKey(2)">2</button>
-                <button class="btn" onclick="pressKey(3)">3</button>
-            </div>
-            <div class="row">
-                <button class="btn" onclick="pressKey(4)">4</button>
-                <button class="btn" onclick="pressKey(5)">5</button>
-                <button class="btn" onclick="pressKey(6)">6</button>
-            </div>
-            <div class="row">
-                <button class="btn" onclick="pressKey(7)">7</button>
-                <button class="btn" onclick="pressKey(8)">8</button>
-                <button class="btn" onclick="pressKey(9)">9</button>
-            </div>
-            <div class="row">
-                <button class="btn" onclick="pressKey(0)">0</button>
-                <button class="btn special-clear" onclick="clearScreen()">Clear</button>
-                <button class="btn special-cancel" onclick="cancel()">Cancel</button>
-                <button class="btn special-enter" onclick="enter()">Enter</button>
-            </div>
+        <div class="row">
+            <button class="btn" onclick="pressKey(4)">4</button>
+            <button class="btn" onclick="pressKey(5)">5</button>
+            <button class="btn" onclick="pressKey(6)">6</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="pressKey(7)">7</button>
+            <button class="btn" onclick="pressKey(8)">8</button>
+            <button class="btn" onclick="pressKey(9)">9</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="pressKey(0)">0</button>
+            <button class="btn special-clear" onclick="clearScreen()">Clear</button>
+            <button class="btn special-cancel" onclick="cancel()">Cancel</button>
+            <button class="btn special-enter" onclick="enter()">Enter</button>
         </div>
     </div>
-    <div>
-        <button class="cambiartema" id="cambiartema2">
-            <i class="fa-solid fa-dragon"></i>
-        </button>
-    </div>
+</div>
+
     <script src="./Cajero/codigos/Cajero.js"></script>
 </body>
 </html>

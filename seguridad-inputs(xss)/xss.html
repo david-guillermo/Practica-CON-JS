@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Seguridad de Inputs (XSS - Cross Site Scripting)</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-slate-500 flex flex-col items-center h-screen w-full">
+        <h1 class="font-bold my-12 text-center text-3xl">Aprendiendo a proteger nuestros inputs de XSS</h1>
+        <div action="" class="mt-32">
+            <label for="nombre" class="font-bold">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" class="border border-black border-solid rounded-lg">           
+            <button id="enviar" class="rounded-xl bg-green-600 font-bold text-lg px-3 py-1">Enviar</button>
+        </div>
+
+        <div id="salida">
+            <!-- Aquí se mostrará el nombre ingresado -->
+        </div>
+    </body>
+    <script src="xss.js"></script>
+</html>

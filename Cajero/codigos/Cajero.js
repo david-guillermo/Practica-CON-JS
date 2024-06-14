@@ -22,14 +22,27 @@ function enter() {
 
 
 
-const cambiartema = document.getElementById ('cambiartema2');
-cambiartema2.onclick = ()=>{
-    if(document.body.classList.contains("#f0f0f0")){
-        document.body.classList.remove("#f0f0f0");
 
-        document.body.classList.add("#1d1d1d");
-    }else{
+// cambio de color (dark-light)
 
+document.addEventListener("DOMContentLoaded", function() {
+    const themeToggleButton = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    // Cargar el tema guardado en localStorage si existe
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        body.classList.add(savedTheme);
     }
 
-}
+    themeToggleButton.addEventListener("click", function() {
+        // Alternar entre las clases de tema
+        if (body.classList.contains("light-theme")) {
+            body.classList.replace("light-theme", "dark-theme");
+            localStorage.setItem("theme", "dark-theme");
+        } else {
+            body.classList.replace("dark-theme", "light-theme");
+            localStorage.setItem("theme", "light-theme");
+        }
+    });
+});

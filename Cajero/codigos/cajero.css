@@ -1,26 +1,34 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
+    /* display: flex; */
+    display: grid;
     justify-content: center;
+    justify-items: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    /* background-color: #1d1d1d; */
+}
+
+body.light-theme{
+    transition: 1s;
     background-color: #f0f0f0;
+    color:#1d1d1d;
+}
+
+body.dark-theme{
+    transition: 1s;
+    background-color: #1d1d1d;
+    color:#1d1d1d;
 }
 
 
-
-
-/* #333333 gry 
-#f0f0f0 witw*/
 .atm {
-    width: 300px;
+    width: 350px;
     background-color: #272727;
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.726);
+    padding: 31px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.616);
 }
 /* usar unidades realivas y flexibles
 por ejemplo vw ,vh ,% */
@@ -29,10 +37,10 @@ por ejemplo vw ,vh ,% */
 
 /* pantalla */
 .screen {
-    background-color: #fff;
+    background-color: #fff8f8;
     border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 80px;
+    margin-bottom: 15%;
     text-align: center;
     font-size: 1.2em;
 }
@@ -44,6 +52,8 @@ por ejemplo vw ,vh ,% */
 }
 
 .row {
+    margin-top: 4%;   
+    margin-right: 2%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -101,23 +111,79 @@ ENTER CANCEL ENTER */
 }
 
 
-/* .cambiartema{
-    border-color: #000000;
-} */
-
-
-.cambiartema{
-    background-color: #a7a7a7;
-    color: #161616;
-    border-radius: 6px;
-    size: 100%;
+/* boton para cambiar tema */
+.barradebotones{
+    padding: 30px;
+}
+/* anomaciones & estilos*/
+.switch {
+    --switch_width: 2em;
+    --switch_height: 1em;
+    --thumb_color: #e8e8e8;
+    --track_color: #e8e8e8;
+    --track_active_color: #888;
+    --outline_color: #000;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: var(--switch_width);
+    height: var(--switch_height);
 }
 
+  /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
 
+  /* The slider */
+.slider {
+    box-sizing: border-box;
+    border: 2px solid var(--outline_color);
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--track_color);
+    transition: .15s;
+    border-radius: var(--switch_height);
+}
 
+.slider:before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    height: var(--switch_height);
+    width: var(--switch_height);
+    border: 2px solid var(--outline_color);
+    border-radius: 100%;
+    left: -2px;
+    bottom: -2px;
+    background-color: var(--thumb_color);
+    transform: translateY(-0.2em);
+    box-shadow: 0 0.2em 0 var(--outline_color);
+    transition: .15s;
+}
 
+input:checked + .slider {
+    background-color: var(--track_active_color);
+}
 
+input:focus-visible + .slider {
+    box-shadow: 0 0 0 2px var(--track_active_color);
+}
+  /* Raise thumb when hovered */
+input:hover + .slider:before {
+    transform: translateY(-0.3em);
+    box-shadow: 0 0.3em 0 var(--outline_color);
+}
 
+input:checked + .slider:before {
+    transform: translateX(calc(var(--switch_width) - var(--switch_height))) translateY(-0.2em);
+}
 
 
 
