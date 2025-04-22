@@ -115,7 +115,7 @@ ENTER CANCEL ENTER */
 .barradebotones{
     padding: 30px;
 }
-/* anomaciones & estilos*/
+/* animaciones & estilos*/
 .switch {
     --switch_width: 2em;
     --switch_height: 1em;
@@ -130,7 +130,7 @@ ENTER CANCEL ENTER */
     height: var(--switch_height);
 }
 
-  /* Hide default HTML checkbox */
+  /*checkbox */
 .switch input {
     opacity: 0;
     width: 0;
